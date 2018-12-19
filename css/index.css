@@ -1,0 +1,81 @@
+body {
+    background-color: #dbdbdb;
+}
+
+a {
+    color: #6C97C4 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.terminal {
+    background-color: #000;
+    border: 2px solid #aaaaaa;
+    height: 500px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow:hidden;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    user-select: none;
+}
+
+.terminal-option {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.terminal-title {
+    color: #60615E;
+}
+
+.terminal-user {
+    color: #87ff0f;
+    font-weight: bold;
+}
+
+.terminal-folder {
+    color: #6C97C4;
+    font-weight: bold;
+}
+
+.terminal-header {
+    background-color: #e5e5e5;
+}
+
+.terminal-body {
+    font-family: "Lucida Console", Monaco, monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    color: #fff;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  .blinker { 
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-duration: 1s;
+  }
+  
+  @keyframes blinker { 
+    from { opacity: 1.0; } to { opacity: 0.0; }
+  }
+  

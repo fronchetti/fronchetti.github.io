@@ -1,5 +1,5 @@
 body {
-    background-color: #dbdbdb;
+    background-color:#EDEDED;
 }
 
 a {
@@ -9,31 +9,72 @@ a {
 }
 
 .terminal {
-    background-color: #000;
-    border: 2px solid #aaaaaa;
+    background-color: #000000;
+    border: 2px solid #B3B3B3;
     height: 500px;
+    max-width: 800px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     overflow:hidden;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -webkit-box-shadow: 3px 3px 5px 6px #CCCCCC;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #CCCCCC;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #CCCCCC;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     -webkit-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
     user-select: none;
-}
-
-.terminal-option {
-    padding-right: 10px;
-    padding-left: 10px;
+    margin-top: 20%;
 }
 
 .terminal-title {
-    color: #60615E;
+    color: #4F4949;
+    text-align: center;
+    padding-left: 14.3333333334%;
+}
+
+.minimize-button {
+    float: right;
+    margin: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FAC536;
+    border: 1px solid #E9B126;
+}
+
+.maximize-button {
+    float: right;
+    margin: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #39EA49;
+    border: 1px solid #28D436;
+}
+
+.close-button {
+    float: right;
+    margin: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #F25056;
+    border: 1px solid #E23F49;
+}
+
+.terminal-option {
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .terminal-title {
+        padding-left: 0%;
+    }
 }
 
 .terminal-user {
-    color: #87ff0f;
+    color: #8AE234;
     font-weight: bold;
 }
 
@@ -43,39 +84,26 @@ a {
 }
 
 .terminal-header {
-    background-color: #e5e5e5;
+    background-color: #DDDCDD;
 }
 
 .terminal-body {
     font-family: "Lucida Console", Monaco, monospace;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 25px;
-    color: #fff;
+    color: #FFFFFF;
     height: 100%;
     overflow-y: scroll;
 }
-
-.blinking-cursor {
-    font-weight: 100;
-    font-size: 30px;
-    color: #2E3D48;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-  }
-  
-  .blinker { 
+ 
+.blinker { 
     animation-name: blinker;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1,0,0,1);
     animation-duration: 1s;
-  }
+}
   
-  @keyframes blinker { 
+@keyframes blinker { 
     from { opacity: 1.0; } to { opacity: 0.0; }
-  }
+}
   

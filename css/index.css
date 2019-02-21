@@ -58,9 +58,9 @@ a {
 }
 
 .publication-year {
-    background-color: #373737;
+    background-color:#d9dadb;
     text-align: center;
-    color: white;
+    border-radius: 5px;
     line-height: 0px;
 }
 

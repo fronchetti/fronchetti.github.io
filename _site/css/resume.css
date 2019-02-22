@@ -16,7 +16,7 @@
     margin: 10px;
 }
 
-.education-degree {
+.title {
     font-weight: normal;
 }
 
@@ -27,24 +27,4 @@
     line-height: 0px;
 }
 
-.paper {
-    margin: 0 0 120px 0;
-}
-
-.paper-title {
-    font-weight: normal;
-}
-
-.paper-details {
-    margin-left: 50px !important;
-}
-
-.paper-link {
-    color: #373737 !important;
-    margin: auto 0px !important;
-}
-
-.project-title {
-    font-weight: normal;
-}
 

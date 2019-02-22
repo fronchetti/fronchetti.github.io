@@ -7,14 +7,26 @@ body {
 }
 
 a {
-    color: #3e6cb7;
+    color: black;
     text-decoration: none;
+}
+
+.container {
+    padding: 60px 120px;
 }
 
 .profile {
     color: white;
-    padding: 60px 120px;
     background-color: #373737;
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.occupation {
+    font-size: 30px;
 }
 
 .picture img {
@@ -23,21 +35,7 @@ a {
     border-radius: 10px;
 }
 
-.name {
-    line-height: 30px;
-}
-
-.name span {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.occupation span {
-    font-size: 30px;
-}
-
 .content {
-    padding: 60px 120px;
     background-color: white;
 }
 

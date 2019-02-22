@@ -16,17 +16,17 @@
     {% endif %}
 </header>
 <body>
-    <div class="container">
-        <div class="profile row">
+    <div class="profile container">
+        <div class="row">
             <div class="picture three columns">
                 <img src="imgs/profile.jpeg" class="u-max-full-width">
             </div>   
             <div class="description nine columns">
                 <div class="name row">
-                    <span class="twelve columns">FELIPE FRONCHETTI</span><br>
+                    FELIPE FRONCHETTI
                 </div>
                 <div class="occupation row">
-                    <span class="twelve columns">Master's Student in Computer Science</span>            
+                    Master's Student in Computer Science         
                 </div>
                 <div class="location row">
                     <i class="fas fa-map-marker-alt one column"></i>
@@ -40,13 +40,12 @@
                     <i class="far fa-envelope one column"></i>
                     <span class="eleven columns">fronchetti@usp.br</span>
                 </div>
-            </div>
+            </div>            
         </div>
+    </div>
 
-        <div class="content">
-            {{ content }}
-        </div>
-
+    <div class="content container">
+        {{ content }}
     </div>
 </body>
 </html>

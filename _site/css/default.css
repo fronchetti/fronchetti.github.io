@@ -24,15 +24,31 @@ a {
 }
 
 .name {
+    line-height: 40px;
+}
+
+.name span {
     font-size: 50px;
     font-weight: bold;
 }
 
-.occupation {
+.occupation span {
     font-size: 30px;
 }
 
 .content {
     padding: 60px 120px;
     background-color: white;
+}
+
+.location .one.column {
+    width: 0.16666666667%;
+}
+
+.university .one.column {
+    width: 0.16666666667%;
+}
+
+.email .one.column {
+    width: 0.16666666667%;
 }

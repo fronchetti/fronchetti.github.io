@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Felipe Fronchetti"/>
+    <!-- CSS (Default) -->
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS (Custom) -->
+    {% if page.css %}
+        <link rel="stylesheet" href="/css/{{ page.css }}" media="screen" type="text/css">
+    {% endif %}
+</header>
+<body>
+    <div class="container">
+        <div class="profile row">
+            <div class="picture three columns">
+                <img src="imgs/profile.jpeg" class="u-max-full-width">
+            </div>   
+            <div class="description nine columns">
+                <span class="name twelve columns">FELIPE FRONCHETTI</span><br>
+                <span class="occupation twelve columns">Master's Student in Computer Science</span>            
+                <span class="location twelve columns"><i class="fas fa-map-marker-alt"></i> São Paulo, Brazil</span>
+                <span class="university twelve columns"><i class="fas fa-graduation-cap"></i> University of São Paulo</span>
+                <span class="email twelve columns"><i class="far fa-envelope"></i></i> fronchetti@usp.br</span>
+            </div>
+        </div>
+
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.section {
+    padding-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title-name {
+    font-weight: normal;
+}
+
+.section-title-icon {
+    color: #373737;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.education-degree {
+    font-weight: normal;
+}
+
+.publication-year {
+    background-color:#f2f2f2;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 0px;
+}
+
+.paper {
+    margin: 0 0 120px 0;
+}
+
+.paper-title {
+    font-weight: normal;
+}
+
+.paper-details {
+    margin-left: 50px !important;
+}
+
+.paper-link {
+    color: #373737 !important;
+    margin: auto 0px !important;
+}
+
+.project-title {
+    font-weight: normal;
+}
+

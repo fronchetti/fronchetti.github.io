@@ -30,8 +30,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
-  width: 100%;
-  max-width: 1400px;
+  width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -396,6 +395,13 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
+
+/* Smaller than desktop */
+@media (max-width: 1000px) {
+  .container {
+    width: 100% !important;
+  }
+}
 
 
 /* Larger than mobile */

@@ -76,9 +76,9 @@ layout: default
             </div>
         </div>
         <div class="section-body publication">
-            {% assign years = site.papers | sort: "year" | group_by: "year" | reverse %}
+            {% assign publication_years = site.papers | sort: "year" | group_by: "year" | reverse %}
             
-            {% for year in years %}
+            {% for year in publication_years %}
                 <div class="publication-year">
                     {{ year.name }}
                 </div>

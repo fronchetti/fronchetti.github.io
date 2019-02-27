@@ -1,5 +1,5 @@
 .section {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .section-title {
@@ -7,13 +7,15 @@
 }
 
 .section-title-name {
+    color: #373737;
     font-weight: normal;
+    font-size: 22px;
 }
 
 .section-title-icon {
     color: #373737;
-    font-size: 25px;
-    margin: 10px;
+    font-size: 22px;
+    margin-right: 10px;
 }
 
 .title {
@@ -21,10 +23,10 @@
 }
 
 .publication-year {
+    font-size: 26px;
+    margin-bottom: 1rem;
     background-color:#f2f2f2;
     text-align: center;
     border-radius: 5px;
-    line-height: 0px;
 }
-
 

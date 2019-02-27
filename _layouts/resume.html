@@ -43,22 +43,19 @@ layout: default
             </div>
         </div>
         <div class="section-body education">
+            {% assign degrees = site.degrees | sort: "start_year" | reverse %}
+
             <ul>
+                {% for degree in degrees %}
                 <li>
-                    <span class="title">M.Sc. in Computer Science</span>
+                    <span class="title">{{ degree.title }}</span>
                     <div class="row">
-                        <span class="twelve columns">University of São Paulo (USP)</span>
-                        <span class="twelve columns">2018 - Current</span>        
+                        <span class="twelve columns">{{ degree.institution }}</span>
+                        <span class="twelve columns">{{ degree.start_year }} - {{ degree.end_year }}</span>        
                     </div>
                 </li>
-                <li>
-                    <span class="title">B.Sc. in Computer Science</span>
-                    <div class="row">
-                        <span class="twelve columns">Federal University of Technology - Paraná (UTFPR)</span>
-                        <span class="twelve columns">2014 - 2017</span>        
-                    </div>
-                </li>    
             </ul>
+            {% endfor %}
         </div>    
     </div>
 
@@ -128,11 +125,15 @@ layout: default
                 <hr>
             </div>
         </div>
-        <div class="section-body projects-and-extensions">
+        <div class="section-body awards">
+            {% assign awards = site.awards | sort: "year" | reverse %}
+
             <ul>
+                {% for award in awards %}
                 <li>
-                    <span>Best Paper Award - V Workshop on Software Visualization, Evolution and Maintenance (2017)</span>
+                    <span>{{ award.title }} ({{ award.year }})</span>
                 </li>
+                {% endfor %}
             </ul>
         </div>    
     </div>
@@ -154,30 +155,18 @@ layout: default
                 <hr>
             </div>
         </div>
-        <div class="section-body education">
+        <div class="section-body funding">
+            {% assign fundings = site.fundings | sort: "start_year" | reverse %}
             <ul>
+                {% for funding in fundings %}
                 <li>
-                    <span class="title">Support to the Development of Tools for Data Mining and
-                            Document Summarization for a FLOSS Portal</span>
+                    <span class="title">{{ funding.title }}</span>
                     <div class="row">
-                        <span class="twelve columns">São Paulo Research Foundation (FAPESP)</span>
-                        <span class="twelve columns">2018 - Current</span>        
+                        <span class="twelve columns">{{ funding.institution }}</span>
+                        <span class="twelve columns">{{ funding.start_year }} - {{ funding.end_year }}</span>        
                     </div>
-                </li>        
-                <li>
-                    <span class="title">Study of Newcomers in Open Source Projects</span>
-                    <div class="row">
-                        <span class="twelve columns">National Council for Scientific and Technological Development (CNPq)</span>
-                        <span class="twelve columns">2015 - 2016</span>        
-                    </div>
-                </li>        
-                <li>
-                    <span class="title">Production of Digital Educational Resources</span>
-                    <div class="row">
-                        <span class="twelve columns">Federal University of Technology - Paraná (UTFPR)</span>
-                        <span class="twelve columns">2014</span>        
-                    </div>
-                </li>    
+                </li>
+                {% endfor %}     
             </ul>
         </div>    
     </div>
@@ -198,32 +187,24 @@ layout: default
                 <hr>
             </div>
         </div>
-        <div class="section-body extensions">
+        <div class="section-body extension">
+            {% assign extensions = site.extensions | sort: "start_year" | reverse %}
+
             <ul>
+                {% for extension in extensions %}
                 <li>
-                    <span class="title">FLUSP</span>
+                    <span class="title">{{ extension.title }}</span>
                     <div class="row">
                         <span class="twelve columns">
-                            <a href="https://flusp.ime.usp.br/" target="__blank">https://flusp.ime.usp.br/</a>
+                            <a href="{{ extension.url }}" target="__blank">{{ extension.website }}</a>
                         </span>
                         <span class="twelve columns">
-                            Group of graduate and undergraduate students at the University of São Paulo that aims to contribute to FLOSS projects.
+                            {{ extension.description }}
                         </span>  
-                        <span class="twelve columns">2019 - Current</span>              
+                        <span class="twelve columns">{{ extension.start_year }} - {{ extension.end_year }}</span>              
                     </div>
                 </li>
-                <li>
-                    <span class="title">HAKEN</span>
-                    <div class="row">
-                        <span class="twelve columns">
-                            <a href="https://www.hakenej.com/" target="__blank">https://www.hakenej.com/</a>
-                        </span>
-                        <span class="twelve columns">
-                            Junior enterprise run by undergraduate students at the Federal University of Technology - Paraná.
-                        </span>        
-                        <span class="twelve columns">2014 - 2015</span>        
-                    </div>
-                </li>
+                {% endfor %}
             </ul>
         </div>    
     </div>
@@ -244,19 +225,23 @@ layout: default
                 <hr>
             </div>
         </div>
-        <div class="section-body extensions">
+        <div class="section-body tools">
+            {% assign tools = site.tools %}
+
             <ul>
+                {% for tool in site.tools %}
                 <li>
-                    <span class="title">OPEN UNIVERSE</span>
+                    <span class="title">{{ tool.title }}</span>
                     <div class="row">
                         <span class="twelve columns">
-                            <a href="https://github.com/openuniverseorg/" target="__blank">https://github.com/openuniverseorg/</a>
+                            <a href="{{ tool.url }}" target="__blank">{{ tool.website }}</a>
                         </span>
                         <span class="twelve columns">
-                            A platform designed to improve the attractiveness of open source projects.
+                            {{ tool.description }}
                         </span>        
                     </div>
                 </li>
+                {% endfor %}
             </ul>
         </div>    
     </div>

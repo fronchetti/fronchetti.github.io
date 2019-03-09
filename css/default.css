@@ -25,12 +25,12 @@ a:hover {
 }
 
 .name {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .occupation {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .picture img {

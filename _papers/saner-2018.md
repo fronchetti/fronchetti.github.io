@@ -4,5 +4,5 @@ authors: "Gustavo Pinto, Igor Wiese, Luiz Dias"
 published_at: "International Conference on Software Analysis, Evolution and Reengineering (SANER)"
 year: 2018
 preprint: "https://ieeexplore.ieee.org/abstract/document/8330263/"
-slides: http://gustavopinto.org/lost+found/saner2018-talk.pdf
+slides: 
 ---

@@ -4,5 +4,5 @@ authors: "Luiz Dias, Igor Steinmacher, Gustavo Pinto, Daniel Alencar, Marco Gero
 published_at: "IEEE International Conference on Software Maintenance and Evolution (ICSME)"
 year: 2016
 preprint: "https://ieeexplore.ieee.org/abstract/document/7816497/"
-slides: https://speakerdeck.com/gustavopinto/how-does-the-shift-to-github-impact-project-collaboration
+slides: 
 ---

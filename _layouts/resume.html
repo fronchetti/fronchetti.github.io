@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <!--
     SUMMARY
 -->
@@ -32,7 +31,7 @@ layout: default
             <hr>
         </div>
         <div class="four columns">
-            <i class="fas fa-book"></i>
+            <i class="fas fa-graduation-cap"></i>
             EDUCATION
         </div>
         <div class="four columns">
@@ -56,7 +55,7 @@ layout: default
 </div>
 
 <!--
-    EDUCATION
+    PUBLICATIONS
 -->
 <div class="section">
     <div class="section-title row">
@@ -83,13 +82,13 @@ layout: default
                     <div class="ten columns">
                         <li>
                             <span class="title">{{ paper.title }}</span>
+                            <div class="row">
+                                <span>{{ paper.published_at }}</span>
+                            </div>
+                            <div class="row">
+                                <span>{{ paper.authors }}</span>
+                            </div>
                         </li>
-                        <div class="row">
-                            <span>{{ paper.published_at }}</span>
-                        </div>
-                        <div class="row">
-                            <span>{{ paper.authors }}</span>
-                        </div>
                     </div>
                     <div class="two columns">
                         <div class="row">
@@ -208,7 +207,7 @@ layout: default
 </div>
 
 <!--
-    TOOLS
+    SOFTWARE
 -->
 <div class="section">
     <div class="section-title row">
@@ -216,8 +215,8 @@ layout: default
             <hr>
         </div>
         <div class="four columns">
-            <i class="fas fa-wrench"></i>
-            TOOLS
+            <i class="fas fa-code"></i>
+            SOFTWARE
         </div>
         <div class="four columns">
             <hr>

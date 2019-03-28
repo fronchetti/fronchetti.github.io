@@ -1,5 +1,5 @@
 ---
 title: "OPEN UNIVERSE"
-website: "https://github.com/openuniverseorg/"
-description: "A platform designed to improve the attractiveness of open source projects."
+website: "http://openuniverse.me:8000/"
+description: "Open Universe is an analysis platform designed to help new contributors find open source projects. It is still under development"
 ---

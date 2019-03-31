@@ -15,30 +15,35 @@
     {% endif %}
 </header>
 <body>
-    <div class="profile container">
+    <div class="header container">
         <div class="row">
+            {% if page.title %}
             <div class="name row">
-                {{ site.name }}
+                {{ page.title }}
             </div>
-            <div class="occupation row">
-                {{ site.occupation }}
+            {% endif %}
+            {% if page.description %}
+            <div class="description row">
+                {{ page.description }}
             </div>
+            {% endif %}
+            {% if page.university %}
             <div class="university row">
                 <i class="fas fa-university"></i>
-                {{ site.university }}
+                {{ page.university }}
             </div>
+            {% endif %}
+            {% if page.email %}
             <div class="email row">
                 <i class="far fa-envelope"></i>
-                {{ site.email }}
+                {{ page.email }}
             </div>
+            {% endif %}
         </div>
     </div>
     
     <div class="content container">
         {{ content }}
-        <hr>
-        There is more information about me on <b><a href="https://github.com/fronchetti" target="__blank">GitHub</a></b>.
-    </div>
-    
+    </div>   
 </body>
 </html>

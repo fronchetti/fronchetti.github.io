@@ -19,7 +19,7 @@ a:hover {
     padding: 60px 60px;
 }
 
-.profile {
+.header {
     color: white;
     background-color: #111111;
 }
@@ -29,10 +29,21 @@ a:hover {
     font-weight: bold;
 }
 
-.occupation {
+.description {
     font-size: 25px;
 }
 
 .content {
     background-color: white;
+}
+
+.section {
+    padding-bottom: 30px;
+}
+
+.section-title {
+    text-align: center;
+    color: #111111;
+    font-weight: normal;
+    font-size: 22px;
 }

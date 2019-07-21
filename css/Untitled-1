@@ -1,0 +1,6 @@
+Thanks, Christoph! 
+
+Well, what I mean by categories are the barriers that we are looking for in the documentation. I defined the term "multi-category" because we are looking for more than one barrier per paragraph in a documentation. 
+For each paragraph that a rater analyzes, he can mark the category with an X if the category exists in the paragraph or let it blank if it is not present. We have dichotomous data (binary values), not nominal (multiple possible values) per category/barrier.
+
+My problem is: For a pair of raters, I need to calculate the agreement between them for a set of paragraphs, analyzing categories with dichotomous values per paragraph (1 if the category/barrier exists in a paragraph, and 0 if it doesn't),  and group the agreement by category into a single value.

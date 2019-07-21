@@ -1,5 +1,5 @@
 ---
-title: "OPEN UNIVERSE"
+title: "Open Universe"
 website: "https://github.com/openuniverseorg"
-description: "Open Universe is an analysis platform designed to help new contributors find open source projects. It is still under development."
+description: "Analysis platform designed to help new contributors find open source projects. It is still under development."
 ---

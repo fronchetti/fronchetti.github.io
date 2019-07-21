@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-    color: red; 
+    color: rgb(99, 99, 99);
 }
 
 .container {

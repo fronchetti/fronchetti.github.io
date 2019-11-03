@@ -18,7 +18,7 @@ layout: default
         </div>
     </div>
     <div class="summary">
-            I am a Master's Degree student in Computer Science at the University of São Paulo (USP), Brazil.
+            My name is Luiz Felipe Fronchetti Dias. I am a Master's Degree student in Computer Science at the University of São Paulo (USP), Brazil.
             My research lies in the intersection between Software Engineering (SE) and Computer Supported Cooperative Work (CSCW).
             I am (co-)author of 8 papers, including top tier journals and conferences on Software Engineering.
             I currently work on understanding newcomers onboarding and retention in Open Source Software communities.
@@ -74,6 +74,8 @@ layout: default
         </div>
     </div>
     <div class="publication">
+        <small>* For each paper, my name is highlighted in yellow</small>
+
         {% assign publication_years = site.papers | sort: "year" | group_by: "year" | reverse %}
         {% for year in publication_years %}
             <div class="year">
@@ -171,10 +173,9 @@ layout: default
         </ul>
     </div>
 </div>
-
 <!--
     SOFTWARE
--->
+
 <div class="section">
     <div class="section-title row">
         <div class="four columns">
@@ -207,7 +208,7 @@ layout: default
         </ul>
     </div>
 </div>
-
+-->
 <hr>
 There is more information about me on <b><a href="https://github.com/fronchetti" target="__blank">GitHub</a></b> and
 <b><a href="https://scholar.google.com.br/citations?user=-6jIjG8AAAAJ" target="__blank">Google Scholar</a></b>.

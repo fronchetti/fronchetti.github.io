@@ -1,21 +1,3 @@
-body {
-    color: #000000;
-    font-size: 20px;
-    font-weight: lighter;
-    background-color: #efefef;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-a {
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(99, 99, 99);
-}
-
 .container {
     padding: 60px 60px;
 }

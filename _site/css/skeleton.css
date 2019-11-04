@@ -399,7 +399,10 @@ there.
 /* Smaller than desktop */
 @media (max-width: 1000px) {
   .container {
-    width: 100% !important;
+    width: 100%;
+  }
+  .header {
+    width: 100%;
   }
 }
 

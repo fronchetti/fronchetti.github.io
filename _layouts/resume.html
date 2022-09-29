@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+<div class="section">
+    <div class="four columns">
+        Where to find me? <a href="https://www.linkedin.com/in/fronchat/" target="__blank">LinkedIn</a>, <a href="https://github.com/fronchetti" target="__blank">GitHub</a> and
+        <a href="https://scholar.google.com.br/citations?user=-6jIjG8AAAAJ" target="__blank">Google Scholar</a>.
+    </div>
+    <br>
+    <br>
+</div>
+
 <!--
     SUMMARY
 -->
@@ -18,11 +27,14 @@ layout: default
         </div>
     </div>
     <div class="summary">
-            My name is Luiz Felipe Fronchetti Dias, I am a Master's Degree student in Computer Science at the University of São Paulo (USP), Brazil.
-            My research lies in the intersection between Software Engineering (SE) and Computer Supported Cooperative Work (CSCW).
-            I am (co-)author of 8 papers, including top tier journals and conferences on Software Engineering.
-            I currently work on understanding newcomers onboarding and retention in Open Source Software communities.
+            Luiz Felipe Fronchetti Dias, Ph.D. Student in Computer Science at Virginia Commonwealth University, Virginia, USA.
+            Primarily working on the intersection between Software Engineering (SE) and Human-Robot Interaction (HRI), but also with
+            experience on Computer-Supported Cooperative Work (CSCW). I currently investigate alternatives to improve the way humans write code for collaborative robots, including
+            studies on mixed reality and block-based programming languages.
+            Although I love to work with robots, my research career started with open source communities. For more than six years, I investigated topics such
+            as the integration of newcomers in open source projects, the differences between employees and volunteers in open source communities and the benefits of social coding platforms like GitHub.
     </div>
+    <br>
 </div>
 
 <!--
@@ -74,7 +86,7 @@ layout: default
         </div>
     </div>
     <div class="publication">
-        <small>* For each paper, my name is highlighted in yellow</small>
+        <small>* For older papers, you may find my name as Luiz Dias.</small>
 
         {% assign publication_years = site.papers | sort: "year" | group_by: "year" | reverse %}
         {% for year in publication_years %}
@@ -151,8 +163,8 @@ layout: default
             <hr>
         </div>
         <div class="four columns">
-            <i class="fas fa-hands-helping"></i>
-            Funding
+            <i class="fas fa-money-bill"></i>
+            Sponsorship
         </div>
         <div class="four columns">
             <hr>
@@ -167,6 +179,38 @@ layout: default
                 <div class="row">
                     <span class="twelve columns">{{ funding.institution }}</span>
                     <span class="twelve columns">{{ funding.start_year }} - {{ funding.end_year }}</span>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<!--
+    SERVICE
+-->
+<div class="section">
+    <div class="section-title row">
+        <div class="four columns">
+            <hr>
+        </div>
+        <div class="four columns">
+            <i class="fas fa-hands-helping"></i>
+            Service
+        </div>
+        <div class="four columns">
+            <hr>
+        </div>
+    </div>
+    <div class="service">
+        {% assign services = site.service | sort: "year" | reverse %}
+        <ul>
+            {% for service in services %}
+            <li>
+                <span class="title">{{ service.revenue }}</span>
+                <div class="row">
+                    <span class="twelve columns">{{ service.job }}</span>
+                    <span class="twelve columns">{{ service.year }}</span>
                 </div>
             </li>
             {% endfor %}

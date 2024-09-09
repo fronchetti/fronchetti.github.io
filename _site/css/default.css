@@ -1,33 +1,52 @@
-.container {
-    padding: 60px 60px;
-}
 
-.header {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
     color: white;
-    background-color: #111111;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Lato", sans-serif;
+    background-color: black;
 }
 
-.name {
-    font-size: 40px;
-    font-weight: normal;
+.navbar a:hover {
+    font-weight: bold;
+    color: white !important;
 }
 
-.description-icon {
-    margin-right: 10px;
+.navbar * {
+    font-size: 28px;
+    color:white;
 }
 
-.content {
-    background-color: white;
+.navbar-brand {
+    font-weight: bold;
+    font-family: "Merriweather", serif;
 }
 
-
-.section-title {
-    text-align: center;
-    color: #111111;
-    font-weight: normal;
+@media(min-width:992px) {
+    .navbar {
+        background-color: transparent;
+    }
 }
 
-.responsive {
-    max-width: 100%;
-    height: auto;
-  }
+p, li {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 84px;
+}
+
+h2 { 
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 14px;
+}

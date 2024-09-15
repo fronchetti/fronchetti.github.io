@@ -6,33 +6,13 @@ body {
     color: white;
     font-weight: 300;
     font-style: normal;
+    text-align: justify;
     font-family: "Lato", sans-serif;
     background-color: black;
 }
 
-.navbar a:hover {
-    font-weight: bold;
-    color: white !important;
-}
-
-.navbar * {
-    font-size: 28px;
-    color:white;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    font-family: "Merriweather", serif;
-}
-
-@media(min-width:992px) {
-    .navbar {
-        background-color: transparent;
-    }
-}
-
 p, li {
-    font-size: 20px;
+    font-size: 36px;
 }
 
 h1 {
@@ -44,13 +24,92 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 46px;
 }
 
 h4 {
-    font-size: 14px;
+    font-size: 28px;
 }
 
 a {
-    color: white;
+    font-size: 36px;
+    color: white !important;
+}
+
+hr {
+    background-color: white; height: 2.5px; border: 0;
+}
+
+.container-lg {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navbar a:hover {
+    font-weight: bold;
+    color: white !important;
+}
+
+.navbar-brand {
+    font-size: 56px !important;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+}
+
+.navbar-toggler {
+    font-size: 36px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='square' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.introduction {
+    background-color: rgb(18, 18, 18);
+    padding: 25px;
+}
+
+
+@media(min-width:992px) {
+    .navbar {
+        background-color: transparent;
+    }
+
+    .container-lg {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .navbar-brand {
+        font-size: 28px !important;
+    }
+
+    .introduction {
+        padding: 0px;
+        background-color: black;
+    }
+
+    hr {
+        height: 0.5px;
+    }
+    
+    .nav-link {
+        font-size: 28px !important;
+    }
+
+    p, li {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    h4 {
+        font-size: 14px;
+    }
+    
+    a {
+        font-size: 20px !important;
+    }
 }

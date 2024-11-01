@@ -44,7 +44,7 @@
     <div class="container-lg">
       <style>
     body {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/spot2.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85)), url('../img/spot4.jpg');
         background-repeat: no-repeat; 
         background-position: center;
         background-attachment: fixed;       
@@ -54,8 +54,7 @@
     }
 
     .header {
-        padding-top: 20px;
-        text-align: left;
+        margin-top: 30px;
     }
 
     .name {
@@ -64,7 +63,7 @@
     }
 
     .description {
-        font-size: 36px;
+        font-size: 28px;
         font-weight: inherit;
     }
 
@@ -73,7 +72,6 @@
         height: 75px;
         display: flex;
         justify-content: center;
-        background-color: rgb(0, 0, 0);
         align-items: center;
         border-radius: 45%;
         color: white;
@@ -86,30 +84,64 @@
         background-color: rgb(43, 43, 43);  
     }
 
-    @media(min-width:992px) {
-        .header {
-            padding-top: 20vh;
-            padding-bottom: 112px;    
-        }
-
-        span {
-            padding: 10px;
-            background-color: black;
-            border-radius: 15px;
-        }
+    .recent-work {
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(0, 0, 0);
     }
+
+    .card {
+        margin-top: 30px;
+        text-align: left;
+        color: rgb(0, 0, 0);
+    }
+
+    .card-header {
+        font-size: 18px;
+        font-weight: 400;
+        background-color: rgb(171, 171, 171);
+    }
+
+    .card-title {
+        margin-top: 12px;
+        font-weight: 400;
+    }
+    
+    .card-body {
+        font-weight: inherit;
+        background-color: rgb(202, 202, 202);
+    }
+
 </style>
 
-<div class="header">
-    <h1 class="name"><span>Hello, I'm Felipe</span></h1>
-    <h3 class="description"><span>Assistant Professor at Louisiana State University</span></h4>
-    <h3 class="description"><span>Researcher in Software Engineering and Robotics</span></h4>
+<hr>
+<div class="row header">
+    <div class="col-xl-8">
+        <h2 class="name"><span><i>Hello, I'm Felipe</i></span></h2>
+        <h3 class="description"><span>Assistant Professor at Louisiana State University</span></h3>
+        <h3 class="description"><span>Researcher in Software Engineering and Robotics</span></h3>
         <div class="d-flex">
             <a href="https://www.linkedin.com/in/fronchat/" target="_blank" class="social-button"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="https://orcid.org/0000-0003-2104-6676" target="_blank" class="social-button"><i class="fa-brands fa-orcid fa-2x"></i></a>
             <a href="https://github.com/fronchetti/" target="_blank" class="social-button"><i class="fab fa-github fa-2x"></i></a>
             <a href="https://scholar.google.com/citations?hl=en&user=-6jIjG8AAAAJ" target="_blank" class="social-button"><i class="fa-brands fa-google-scholar fa-2x"></i></a>
-            <a href="mailto:ffronchetti@lsu.edu" target="_blank" class="social-button"><i class="far fa-envelope fa-2x"></i></a>
+            <a href="mailto:ffronchetti@lsu.edu" target="_blank" class="social-button"><i class="fa-solid fa-envelope fa-2x"></i></a>
         </div>
+    </div>
+</div>
+<hr>
+<div class="row header"></div>
+    <div class="col-xl-8">
+        <h3>Recent Publications</h3>
+        <div class="card border-dark mb-5" style="max-width: 22rem;">
+            <div class="card-header">ICSE 2024</div>
+            <div class="card-body">
+              <img src="img/duplo.jpg" class="img-fluid" alt="...">
+              <h4 class="card-title">Block-based Programming for Two-Armed Robots: A Comparative Study</h4>
+              <p>This paper presents Duplo, a block-based programming tool that enhances accessibility for non-professionals to program coordinated tasks in two-armed robots.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
     </div>

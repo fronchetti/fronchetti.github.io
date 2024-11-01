@@ -43,38 +43,47 @@ layout: default
     .social-button:hover {
         background-color: rgb(43, 43, 43);  
     }
-
-    .recent-work {
-        padding: 5px;
-        margin: 5px;
-        background-color: rgb(0, 0, 0);
+    
+    @media (min-width: 576px) {
+        .card-group.card-group-scroll {
+            overflow-x: auto;
+            flex-wrap: nowrap;
+        }
     }
 
-    .card {
-        margin-top: 30px;
-        text-align: left;
-        color: rgb(0, 0, 0);
-    }
-
-    .card-header {
-        font-size: 18px;
-        font-weight: 400;
-        background-color: rgb(171, 171, 171);
-    }
-
-    .card-title {
-        margin-top: 12px;
-        font-weight: 400;
+    .card-group.card-group-scroll > .card {
+        flex-basis: 35%;
+        border-radius: 20px;
+        background-color: black;
     }
     
     .card-body {
+        color: black;
         font-weight: inherit;
-        background-color: rgb(202, 202, 202);
+        background-color: rgb(235, 235, 235);
+    }
+
+    ::-webkit-scrollbar-track
+    {
+        border-radius: 15px;
+        -webkit-box-shadow: inset 0 0 6px rgb(40, 40, 40);
+        background-color: #474747;
+    }
+
+    ::-webkit-scrollbar
+    {
+        width: 6px;
+        background-color: #00000000;
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+        border-radius: 15px;
+        background-color: #c7c7c7;
     }
 
 </style>
 
-<hr>
 <div class="row header">
     <div class="col-xl-8">
         <h2 class="name"><span><i>Hello, I'm Felipe</i></span></h2>
@@ -89,17 +98,37 @@ layout: default
         </div>
     </div>
 </div>
-<hr>
-<div class="row header"></div>
-    <div class="col-xl-8">
-        <h3>Recent Publications</h3>
-        <div class="card border-dark mb-5" style="max-width: 22rem;">
-            <div class="card-header">ICSE 2024</div>
+
+<div class="row header">
+    <h3><i>Recent activities</i></h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <video src="files/duplo.mp4" class="card-img-top" muted autoplay loop></video>
             <div class="card-body">
-              <img src="img/duplo.jpg" class="img-fluid" alt="...">
-              <h4 class="card-title">Block-based Programming for Two-Armed Robots: A Comparative Study</h4>
-              <p>This paper presents Duplo, a block-based programming tool that enhances accessibility for non-professionals to program coordinated tasks in two-armed robots.</p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
+          </div>
         </div>
-    </div>
+        <div class="col">
+          <div class="card">
+            <video src="files/alvo.mp4" class="card-img-top" muted autoplay loop></video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <video src="files/roboart.mp4" class="card-img-top" muted autoplay loop></video>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
+

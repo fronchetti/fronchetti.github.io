@@ -70,11 +70,10 @@ hr {
 }
 
 .learn-more > * {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 75px;
     text-decoration: none;
 }
-
 
 @media(min-width:992px) {
     .navbar {

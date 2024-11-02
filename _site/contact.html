@@ -36,7 +36,7 @@
                 <a class="nav-link" href="http://localhost:4000/advising">Advising</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://localhost:4000/index">Contact</a>
+                <a class="nav-link" href="http://localhost:4000/contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -46,7 +46,7 @@
     <div class="container-lg">
       <style>
     body {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/spot3.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/spot-bg.jpg');
         background-repeat: no-repeat; 
         background-position: center;
         background-attachment: fixed;       
@@ -54,10 +54,51 @@
         -o-background-size: cover;
         background-size: cover;
     }
+
+    .social-button {
+        width: 75px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45%;
+        color: white;
+        margin-right: 5px;
+        margin-bottom: 15px;
+        text-decoration: none;
+    }
+
+    .social-button:hover {
+        background-color: rgb(43, 43, 43);  
+    }
+
+    .map {
+        margin-top: 15px;
+    }
 </style>
 
-<p>E-mail: ffronchetti@lsu.edu</p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/fronchat/">@froncht</a></p>
+<div class="row header">
+    <div class="col-xl-8">
+        <h3>Contact me online</h3>
+        <p>You can reach me through social media, email, or by calling my office:</p>
+        <div class="d-flex">
+            <a href="https://www.linkedin.com/in/fronchat/" target="_blank" class="social-button"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="tel:2255784732" target="_blank" class="social-button"><i class="fa-solid fa-square-phone fa-2x"></i></a>
+            <a href="mailto:ffronchetti@lsu.edu" target="_blank" class="social-button"><i class="fa-solid fa-envelope fa-2x"></i></a>
+        </div>
+        <h3>Catch me in person</h3>
+        <p>You can find me in my office on workdays at Patrick F. Taylor Hall, Room 3272X:</p>
+        <div class="map ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13763.999080642123!2d-91.1794054!3d30.4077484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a7189ec5caa3%3A0x5f7b9456401223a9!2sPatrick%20F.%20Taylor%20Hall!5e0!3m2!1sen!2sus!4v1730586128068!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+    </div>
+</div>
+
+
+
+
+
+
     </div>
 </body>
 </html>

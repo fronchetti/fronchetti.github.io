@@ -19,7 +19,6 @@ layout: default
 
     .name {
         font-weight: bold;
-        margin-bottom: 30px;
     }
 
     .description {
@@ -83,11 +82,14 @@ layout: default
     }
 
     .card:hover {
-        -webkit-box-shadow:0px 0px 35px 0px rgba(255,255,255,0.29);
-        -moz-box-shadow: 0px 0px 35px 0px rgba(255,255,255,0.29);
-        box-shadow: 0px 0px 35px 0px rgba(255,255,255,0.29);
+        -webkit-box-shadow:0px 0px 35px 0px rgba(121, 121, 121, 0.29);
+        -moz-box-shadow: 0px 0px 35px 0px rgba(127, 127, 127, 0.29);
+        box-shadow: 0px 0px 35px 0px rgba(133, 133, 133, 0.29);
     }
 
+    a {
+        text-decoration: none;
+    }
 </style>
 
 <div class="row header">
@@ -106,8 +108,8 @@ layout: default
 </div>
 
 <div class="row header">
-    <h3><i>Recent publications</i></h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <h3><i>Selected publications</i></h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 0px !important;">
         <div class="col">
           <a href="https://dl.acm.org/doi/10.1145/3597503.3623329" target="_blank">
           <div class="card">
@@ -141,6 +143,10 @@ layout: default
             </div>
             </a>
           </div>
-      </div>
+    </div>
+</div>
+
+<div class="row header">
+    <a href="{{ site.url }}/research"><h3 class="learn-more anim-typewriter"><i>Learn more about my work <i class="fa-solid fa-angles-right"></i></i></h3></a>
 </div>
 

@@ -14,7 +14,8 @@ layout: default
     }
 
     .header {
-        margin-top: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .name {
@@ -35,7 +36,7 @@ layout: default
         border-radius: 45%;
         color: white;
         margin-right: 25px;
-        margin-top: 25px;
+        margin-top: 15px;
         text-decoration: none;
     }
 
@@ -62,6 +63,18 @@ layout: default
         background-color: rgb(235, 235, 235);
     }
 
+    .card:hover {
+        -webkit-box-shadow:0px 0px 35px 0px rgba(121, 121, 121, 0.29);
+        -moz-box-shadow: 0px 0px 35px 0px rgba(127, 127, 127, 0.29);
+        box-shadow: 0px 0px 35px 0px rgba(133, 133, 133, 0.29);
+    }
+
+    @media(max-width:992px) {
+        h5 {
+            font-size: 36px;
+        }
+    }
+
     ::-webkit-scrollbar-track
     {
         border-radius: 15px;
@@ -81,13 +94,7 @@ layout: default
         background-color: #c7c7c7;
     }
 
-    .card:hover {
-        -webkit-box-shadow:0px 0px 35px 0px rgba(121, 121, 121, 0.29);
-        -moz-box-shadow: 0px 0px 35px 0px rgba(127, 127, 127, 0.29);
-        box-shadow: 0px 0px 35px 0px rgba(133, 133, 133, 0.29);
-    }
-
-    a {
+    a { 
         text-decoration: none;
     }
 </style>
@@ -109,7 +116,7 @@ layout: default
 
 <div class="row header">
     <h3><i>Selected publications</i></h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 0px !important;">
+    <div class="row row-cols-1 row-cols-lg-3 g-4" style="margin-top: 15px !important;">
         <div class="col">
           <a href="https://dl.acm.org/doi/10.1145/3597503.3623329" target="_blank">
           <div class="card">
@@ -146,7 +153,6 @@ layout: default
     </div>
 </div>
 
-<div class="row header">
-    <a href="{{ site.url }}/research"><h3 class="learn-more anim-typewriter"><i>Learn more about my work <i class="fa-solid fa-angles-right"></i></i></h3></a>
+<div class="row learn-more">
+    <a href="{{ site.url }}/curriculum"><h3><i>Learn more about my work <i class="fa-solid fa-angles-right"></i></i></h3></a>
 </div>
-

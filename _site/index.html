@@ -124,47 +124,50 @@
 
     /* Ribbon created at https://www.cssportal.com/css-ribbon-generator/ */
     .ribbon {
-    position: absolute;
-    right: -5px; top: -5px;
-    z-index: 1;
-    overflow: hidden;
-    width: 75px; height: 75px;
-    text-align: right;
+        position: absolute;
+        right: -5px; top: -5px;
+        z-index: 1;
+        overflow: hidden;
+        width: 75px; height: 75px;
+        text-align: right;
     }
+
     .ribbon span {
-    font-size: 10px;
-    font-weight: bold;
-    color: #FFF;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 20px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    width: 100px;
-    display: block;
-    background: #79A70A;
-    background: linear-gradient(#05EFF7 0%, #087F8F 100%);
-    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-    position: absolute;
-    top: 19px; right: -21px;
+        font-size: 10px;
+        font-weight: bold;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 20px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        width: 100px;
+        display: block;
+        background: #79A70A;
+        background: linear-gradient(#05EFF7 0%, #087F8F 100%);
+        box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 19px; right: -21px;
     }
+
     .ribbon span::before {
-    content: "";
-    position: absolute; left: 0px; top: 100%;
-    z-index: -1;
-    border-left: 3px solid #087F8F;
-    border-right: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid #087F8F;
+        content: "";
+        position: absolute; left: 0px; top: 100%;
+        z-index: -1;
+        border-left: 3px solid #087F8F;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #087F8F;
     }
+
     .ribbon span::after {
-    content: "";
-    position: absolute; right: 0px; top: 100%;
-    z-index: -1;
-    border-left: 3px solid transparent;
-    border-right: 3px solid #087F8F;
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid #087F8F;
+        content: "";
+        position: absolute; right: 0px; top: 100%;
+        z-index: -1;
+        border-left: 3px solid transparent;
+        border-right: 3px solid #087F8F;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #087F8F;
     }
 
 </style>
@@ -190,7 +193,7 @@
         <div class="col">
           <a href="https://dl.acm.org/doi/10.1145/3597503.3623329" target="_blank">
           <div class="card">
-            <video src="files/duplo.mp4" class="card-img-top" muted autoplay loop></video>
+            <video src="files/duplo.mp4" class="card-img-top" muted autoplay playsinline  loop></video>
             <div class="card-body">
                 <div class="ribbon"><span>ICSE 2024</span></div>
               <h5 class="card-title">Block-based Programming for Two-Armed Robots: A Comparative Study</h5>
@@ -202,7 +205,7 @@
         <div class="col">
           <a href="https://www.computer.org/csdl/proceedings-article/vrw/2024/744900b192/1XlcyzqqHXq" target="_blank">
           <div class="card">
-            <video src="files/roboart.mp4" class="card-img-top" muted autoplay loop></video>
+            <video src="files/roboart.mp4" class="card-img-top" muted autoplay playsinline loop></video>
             <div class="card-body">
                 <div class="ribbon"><span>VR 2024</span></div>
               <h5 class="card-title">RoboArt: Artistic Robot Programming in Mixed Reality</h5>
@@ -214,7 +217,7 @@
         <div class="col">
             <a href="https://dl.acm.org/doi/10.1145/3563296" target="_blank">
             <div class="card">
-              <video src="files/alvo.mp4" class="card-img-top" muted autoplay loop></video>
+              <video src="files/alvo.mp4" class="card-img-top" muted autoplay playsinline loop></video>
               <div class="card-body">
                 <div class="ribbon"><span>SPLASH 2022</span></div>
                 <h5 class="card-title">Can Guided Decomposition Help End-Users Write Larger Block-Based Programs?</h5>
